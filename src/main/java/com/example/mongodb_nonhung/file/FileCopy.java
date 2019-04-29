@@ -1,7 +1,11 @@
 package com.example.mongodb_nonhung.file;
 
 import java.io.*;
+import java.net.URI;
 import java.nio.channels.FileChannel;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 /**
  * 功能描述: <br>
@@ -13,10 +17,10 @@ import java.nio.channels.FileChannel;
 public class FileCopy {
 
     public static void main(String[] args) throws IOException {
-
-        copyFileByStream(new File("D:\\work\\ces_dev.sql"), new File("D:\\work\\车企源\\新建文本文档.txt"));
+       // copyFileByStream(new File("D:\\work\\ces_dev.sql"), new File("D:\\work\\车企源\\新建文本文档.txt"));
        //copyFileByChannel(new File("D:\\work\\ces_dev.sql"), new File("D:\\work\\车企源\\新建文本文档.txt"));
-
+        //目标文件名称新建文本文档.txt不能存在,如存在"ava.nio.file.FileAlreadyExistsException"
+      filesCoyp(Paths.get("D:\\work\\ces_dev.sql"),Paths.get("D:\\work\\车企源\\新建文本文档.txt"));
     }
 
     //利用 java.io 类库，直接为源文件构建一个FileInputStream读取然后再构建一个
@@ -44,5 +48,10 @@ public class FileCopy {
                 count -= transferred;
             }
         }
+    }
+
+    //利用工具类Files.copy()
+    public static void filesCoyp(Path source,Path dest) throws IOException {
+        Path copy = Files.copy(source, dest);
     }
 }
