@@ -1,4 +1,4 @@
-package com.example.mongodb_nonhung.demoss;
+package com.example.mongodb_nonhung;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

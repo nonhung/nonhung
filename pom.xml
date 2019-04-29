@@ -10,9 +10,9 @@
     </parent>
     <groupId>com.example.mongodb_nonhung</groupId>
     <artifactId>demoss</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>demoss</name>
-    <description>Demo project for Spring Boot</description>
+    <version>1.0-SNAPSHOT</version>
+    <name>mongodb-test</name>
+    <description>mongodb-test</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -22,6 +22,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <version>2.1.3.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -33,6 +34,25 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun.openservices</groupId>
+            <artifactId>ons-client</artifactId>
+            <version>1.7.9.Final</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/uk.gov.gchq.gaffer/bitmap-library -->
+        <dependency>
+            <groupId>uk.gov.gchq.gaffer</groupId>
+            <artifactId>bitmap-library</artifactId>
+            <version>1.8.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>
