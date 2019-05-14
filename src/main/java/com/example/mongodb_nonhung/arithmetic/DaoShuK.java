@@ -9,6 +9,7 @@ import java.util.Scanner;
  * @Date: 2019/5/14 14:09
  */
 public class DaoShuK {
+
     public static Integer find(int a[], int k) {
         if (k >a.length || k<=0){
             return null;
@@ -23,14 +24,8 @@ public class DaoShuK {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int []arr = new int[n];
-        for (int i = 0;i<n;i++){
-            arr[i] = scanner.nextInt();
-        }
-        int m = scanner.nextInt();
-        System.out.println(find(arr,m));
+      int a[]={1,2,4,5,6,7,8,9};
+        System.out.println(find(a,4));
     }
 
 }
