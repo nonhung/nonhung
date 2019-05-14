@@ -6,8 +6,6 @@ import java.util.Scanner;
 /**
  * 功能描述: <br>
  * @description: 求一个正式分解质因数
- * @parm:
- * @return:
  * @Author:ryfh
  * @Date: 2019/5/14 14:10
  */

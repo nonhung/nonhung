@@ -13,13 +13,13 @@ import java.lang.ref.ReferenceQueue;
 import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
 import java.util.*;
-import java.util.concurrent.ThreadPoolExecutor;
+
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Document(collection = "student")
-public class User implements Serializable {
+public  class User implements Serializable {
     private static final long serialVersionUID = 5301728766931012681L;
 
     @Id
@@ -28,6 +28,21 @@ public class User implements Serializable {
     private String userName;
 
     private String passWord;
+
+
+    private static volatile User singleton;
+
+
+    public static User getInstance() {
+        if (singleton == null) {
+            synchronized (User.class) {
+                if (singleton == null) {
+                    singleton = new User();
+                }
+            }
+        }
+        return singleton;
+    }
 
     public static void main(String[] args) {
         User user = new User();
