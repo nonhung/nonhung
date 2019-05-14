@@ -1,7 +1,5 @@
 package com.example.mongodb_nonhung.arithmetic;
 
-import java.util.Scanner;
-
 /**
  * 功能描述: <br>
  * @description: 输入一个链表，输出该链表中倒数第k个结点。为了符合大多数人的习惯
@@ -24,7 +22,7 @@ public class DaoShuK {
     }
 
     public static void main(String[] args) {
-      int a[]={1,2,4,5,6,7,8,9};
+      int a[]={1,2,4,5,6,7,8,9,12,43,32,54,6565,432,5565,876};
         System.out.println(find(a,4));
     }
 
