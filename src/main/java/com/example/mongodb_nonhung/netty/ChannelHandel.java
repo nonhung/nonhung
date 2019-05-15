@@ -10,5 +10,6 @@ public class ChannelHandel extends SimpleChannelInboundHandler<HttpObject> {
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, HttpObject o){
         channelHandlerContext.writeAndFlush(channelHandlerContext);
         StringBuffer stringBuffer = new StringBuffer();
+
     }
 }

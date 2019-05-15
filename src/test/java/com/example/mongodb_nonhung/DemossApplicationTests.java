@@ -20,7 +20,7 @@ public class DemossApplicationTests {
 
     @Test
     public void contextLoads() {
-        mongodbTest.add();
+        //mongodbTest.add();
     }
 
 
