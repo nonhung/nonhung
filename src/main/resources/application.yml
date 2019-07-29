@@ -1,0 +1,46 @@
+spring:
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+    jackson:
+      time-zone: GMT+8
+      date-format: yyyy-MM-dd HH:mm:ss
+    profiles:
+      active: dev
+    servlet:
+      multipart:
+        max-file-size: 200MB
+        max-request-size: 200MB
+  datasource:
+    druid:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://192.168.200.247:3306/sc_upms_admin_dev?useUnicode=true&characterEncoding=utf8
+      username: songchedev
+      password: songchedev@2018!
+      max-active: 50
+      initial-size: 10
+      max-wait: 60000
+      min-idle: 1
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 30000
+      validation-query: select 'x'
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      #connection-properties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJUXMfHKYgcU+aEMqQMzA0MlBl5Q1HoNk1uNsqgnlGUCrDmd+XcnA19dtvH1B2TskXf8d4jiVW+Nm6crSLgvpM8CAwEAAQ==
+      filter:
+        config:
+          enabled: true
+  data:
+    mongodb:
+      host: 192.168.200.247
+      port: 27017
+      username: songcw
+      password: songcw@2018
+      database: songcw_ces_gps
+      authentication-database: songcw_ces_gps
+mybatis:
+  type-aliases-package: com/example/mongodb_nonhung/dao
+  mapper-locations: classpath*:com/global/merchant/service/dao/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true

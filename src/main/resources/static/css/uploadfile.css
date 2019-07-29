@@ -1,0 +1,16 @@
+
+body {padding: 0;}
+.upload-file-group { float: left; width: 100%; border-top: 1px dashed #D2D2D2}
+.upload-file-group:first-child { border-top: none}
+.upload-file-group .top-nav { padding-top: 5px}
+.upload-file-list .item,  .upload-file-list .item .img, .upload-file-list .item img { display: block; width: 89px; height: 90px}
+.upload-file-list .item{ position: relative; float: left; height:110px;  margin: 0 10px 10px 0; text-align: center;}
+.upload-file-list .item p { height: 20px; line-height: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis}
+.upload-file-list .item .layui-icon-delete { position: absolute; top: 0; right: 0; font-size: 20px; color: #fff; background: #000; opacity: .6; cursor: pointer}
+.upload-file-list .item .layui-icon-delete:hover { color: #F74C31}
+.upload-file-list .item.add , .upload-file-list .item.add i, .upload-file-list .item.add  span{ vertical-align: middle}
+.upload-file-list .item.add { height:90px; line-height: 90px; border: 1px solid #D2D2D2; cursor: pointer}
+.upload-file-list .item.add .layui-icon { font-size: 30px;}
+.add-file-modal { padding: 20px 0 10px; display: none}
+.add-file-modal .layui-form-label { width: 5em!important;}
+.add-file-modal .text { width: 190px; padding-top: 5px; word-break: break-all; text-align: left; background: #fff}

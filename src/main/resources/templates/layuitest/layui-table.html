@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layui-table</title>
+    <link rel="stylesheet" href="../../static/layui/css/layui.css">
+
+</head>
+<body>
+<script src="../../static/layui/layui.js"></script>
+<script>
+    layui.use(['form', 'element', 'laydate', 'table'], function() {
+        var form = layui.form,
+            table = layui.table,
+            laydate = layui.laydate,
+            $ = layui.$,
+            element = layui.element;
+
+        table.render({
+            cols: [[ //标题栏
+                {field: 'username', title: '联系人', width: 80, rowspan: 2} //rowspan即纵向跨越的单元格数
+                , {field: 'amount', title: '金额', width: 80, rowspan: 2}
+                , {align: 'center', title: '地址', colspan: 3} //colspan即横跨的单元格数，这种情况下不用设置field和width
+            ], [
+                {field: 'province', title: '省', width: 80}
+                , {field: 'city', title: '市', width: 120}
+                , {field: 'county', title: '详细', width: 300}
+            ]]
+        });
+    })
+</script>
+</body>
+</html>

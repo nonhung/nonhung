@@ -1,0 +1,59 @@
+
+.top-nav .layui-btn, .top-nav .layui-btn+.layui-btn {  margin-top: 5px;  margin-right: 10px!important; }
+
+.layui-form-item {margin-bottom: 0!important;}
+.layui-form-item.mb { margin-bottom: 10px!important;}
+.layui-form-item .layui-form-label { width: 8em!important; padding: 2px!important;}
+.layui-form-item .layui-inline{ display: inline-block; width: 24%; min-height: 30px; margin-bottom: 0!important;margin-right: 0!important; line-height: 24px!important;}
+.layui-form-item .layui-input-inline { width: calc(100% - 8em - 10px)!important; margin-right: 0!important; word-break: break-all}
+.layui-form-item .layui-form-mid { margin-right: 0!important; padding: 2px!important; white-space: nowrap; line-height: 30px}
+.layui-form-radio { margin-top: 0!important;}
+
+.order-modify { padding: 0}
+.order-modify .layui-tab { margin: 0}
+.order-modify .layui-tab-content  { padding: 10px 0 0}
+.order-modify .layui-tab-title, .order-modify .layui-tab-title li { height: 32px; line-height: 32px}
+.order-modify .layui-tab-title .layui-this:after { height: 33px}
+
+.order-modify .order-module{ position: relative; margin-bottom: 10px; border: 1px solid #e5e5e5}
+.order-modify .order-module .top-nav { margin-bottom: 10px; border-bottom: 1px dashed #e5e5e5}
+.order-modify .order-module .top-nav.mb0 { margin-bottom: 0;}
+.order-modify .order-module .warning-img { position: absolute; top: calc(50% - 50px); right: 20px; width: 100px; height: 100px}
+.order-modify .table { width: calc(100% - 20px); margin: 0 10px 10px;}
+.order-modify .table.fixed { table-layout: fixed}
+.order-modify .table.color td:nth-child(odd), .order-modify .table td.gray { background: #f5f5f5; color: gray}
+.order-modify .table td.red { color: #f00!important;}
+.order-modify .table.center { text-align: center}
+.order-modify .table td{ padding: 4px; line-height: 20px; border: 1px solid #e5e5e5; word-break: break-all}
+.order-modify .table td .img { width: 100%; height: 60px}
+.order-modify .table td textarea { width: 100%; min-height: 80px; padding: 4px; resize: none}
+.order-modify .table .layui-input { padding-left: 0;}
+.order-modify .table .layui-form-mid { margin-right: 0; white-space: nowrap}
+
+.order-modify .main-layout { display: flex; margin: 10px 10px 0}
+.order-modify .main-layout-left { width: 100%; min-width: 600px; margin-right: 360px; padding-top: 155px}
+.order-modify .main-layout-right { position: fixed; top: 10px; right: 10px; z-index: 99; width: 350px; height: calc(100% - 20px); overflow: hidden; background: #fff}
+.order-modify .main-layout-right .table td { padding: 4px; line-height: 18px}
+/*.order-modify .main-layout-iframe { height: 100%;}*/
+
+.loan-warning { position: fixed; top: 0; left: 10px; z-index: 999; width: calc(100% - 380px); background: #fff; }
+.loan-warning .order-module { margin: 10px 0 0 0;}
+.loan-warning .layui-tab-item:nth-child(1) table td:nth-child(even){ padding: 0 8px; text-align: center; white-space: nowrap }
+.loan-warning .layui-tab-item:nth-child(3) table td { white-space: nowrap }
+.loan-warning .layui-tab-item:nth-child(3) table td:nth-child(odd){ text-align: center;}
+
+.submit-order { padding-right: 5px; padding-bottom: 10px}
+.submit-order .layui-form-item:first-child { margin-bottom: 5px!important;}
+/*.submit-order .layui-form-item:nth-child(2) .layui-input-inline{ width: 610px}*/
+.submit-order .layui-form-item textarea{ width: calc(100% - 12px); height: 80px;padding: 5px; border: 1px solid #eee}
+
+.order-border-block li { margin-bottom: 10px!important; padding: 10px 10px 10px 0; border: 1px solid #e5e5e5}
+.order-border-block .center { text-align: center; color: gray; border: none}
+.order-border-block .layui-form-item .layui-inline { width: 33%}
+.order-border-block .layui-form-item .layui-form-label { width: 100px!important;}
+.order-border-block .layui-form-item .layui-input-block { min-height: 22px; margin-left: 104px}
+
+.order-log .up, .order-log .table {display: none}
+.order-log .center { margin-top: 10px}
+.order-log .layui-icon { margin-right: 5px}
+/*.order-log .layui-table-view { margin: 0!important;}*/

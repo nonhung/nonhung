@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="">
+    <!--placeholder提示，autocomplete-->
+    姓名：<input type="text" placeholder="请输入姓名" name="xxx" autocomplete="on" required><br>
+    密码：<input type="password"> <br>
+    <!--邮箱校验-->
+    邮箱：<input type="email"><br>
+    电话：<input type="number" max="100" min="0" value="50"><br>
+    <!--网址校验-->
+    网址：<input type="url"><br>
+    <!--日期-->
+    <input type="time"><br>
+    <input type="date"><br>
+    <input type="datetime-local"><br>
+    <!--月份-->
+    <input type="month"><br>
+    <input type="week"><br>
+    <!--范围-->
+    范围：<input type="range" max="10" min="0" value="10"><br>
+
+    <!--文本框后有删除功能-->
+    提交：<input type="search"><br>
+
+    <!--文件-->
+    提交：<input type="file" required multiple><br>
+
+    选择1：<select name="" id="">
+        <option value="1">java</option>
+        <option value="2">php</option>
+        <option value="3">web</option>
+    </select>
+<br>
+    选择2：<input type="text" list="list">
+    <datalist id="list">
+        <option value="1">java</option>
+        <option value="2">php</option>
+        <option value="3">web</option>
+    </datalist>
+<br>
+    <!--进度条-->
+    进度条：<progress max="100" value="100"></progress>
+    <br>
+    提交：<input type="submit"><br>
+</form>
+</body>
+</html>

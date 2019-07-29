@@ -1,6 +1,5 @@
 package com.example.mongodb_nonhung.mongodb;
 
-import jdk.nashorn.internal.ir.annotations.Immutable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -65,6 +64,7 @@ public  class User implements Serializable {
         System.runFinalization();
 
         m(9);
+
     }
 
         /**

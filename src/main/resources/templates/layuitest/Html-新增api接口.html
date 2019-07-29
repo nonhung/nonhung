@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API接口</title>
+</head>
+<body>
+<div>
+    <img src="../../static/img/mbp15touch-space-gallery2-201807_GEO_CN.jpeg">
+    <input type="button" id="quan">全屏显示</div>
+    <input type="button" id="cancel">取消全屏</div>
+</div>
+<img src="">
+<script>
+    <!--网络接口-->
+    window.addEventListener("online", function(){
+        alert("网络链接")
+    })
+    window.addEventListener("offline", function(){
+        alert("网络断开")
+    })
+    <!--全屏接口-->
+    /* window.onload=function(){
+        var div=document.querySelector("div");
+
+        <!--requestFullscreen全屏显示-->
+
+        document.querySelector("#quan").onclick=function(){
+            div.webkitRequestFullscreen()
+        }*/
+
+}
+
+</script>
+<form action="">
+    <input type="file" id="img" name="img" onchange="getfile"><br>
+    <input type="submit">
+</form>
+<script>
+    function getfile() {
+      var file=  new FileReader()
+      var file1 = document.querySelector("#img").files[0];
+      file.onload=function () {
+          document.querySelector("img").src=file.result;
+      }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>shirologin</title>
+</head>
+<body>
+<h1>shirologin</h1>
+<form action="" method="post" id="useLogin">
+<div >
+    <label>用户名</label>
+    <div>
+        <input type="text" name="username">
+    </div>
+</div>
+<div>
+    <label>密码</label>
+    <div>
+        <input type="password" name="password">
+    </div>
+</div>
+    <input value="登录" style="width:100%;" type="button" onclick="login();">
+</form>
+
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/layui/layui.js"></script>
+<script>
+    function login() {
+        layui.use('layer', function(){
+            $.post("/validateLogin",$("#useLogin").serialize(),function(result){
+                console.log(result)
+                if(result.code == 0000){
+                    window.location.href="/index";
+                }else{
+                    $("#username").val("");
+                    $("#password").val("");
+                    layer.alert(result.msg,function(){
+                        layer.closeAll();//关闭所有弹框
+                    });
+                }
+            });
+        });
+    }
+</script>
+</body>
+</html>

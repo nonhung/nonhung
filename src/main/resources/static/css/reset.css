@@ -1,0 +1,27 @@
+input[readonly], textarea[readonly] {
+  background: #f4f4f4;
+}
+/*表单*/
+.layui-form-item.col-1 .layui-inline {
+  width: 99%;
+}
+.layui-form-item.col-2 .layui-inline {
+  width: 50%;
+}
+.layui-form-item.col-3 .layui-inline {
+  width: 33.33%;
+}
+.layui-form-item.col-4 .layui-inline {
+  width: 25%;
+}
+.layui-form-item.col-1 .layui-inline, .layui-form-item.col-2 .layui-inline, .layui-form-item.col-3 .layui-inline, .layui-form-item.col-4 .layui-inline{
+  float: left;
+  display: flex;
+  margin-right: 0;
+}
+.layui-form-item.col-1 .layui-form-label, .layui-form-item.col-2 .layui-form-label, .layui-form-item.col-3 .layui-form-label, .layui-form-item.col-4 .layui-form-label{
+  width: 10em;
+}
+/*.layui-form-item.col-1 .layui-inline, .layui-form-item.col-2 .layui-inline, .layui-form-item.col-3 .layui-input-inline, .layui-form-item.col-4 .layui-input-inline{*/
+  /*width: 100%;*/
+/*}*/

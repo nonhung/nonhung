@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    <!--class为java-->
+    li[class=java]{
+    text-decoration:underline;
+    }
+    <!--class包含java-->
+    li[class*=java]{
+        font-size: 30px;
+    }
+    <!--class为jav开头-->
+    li[class^=java]{
+        font-size: 30px;
+    }
+    <!--class为java结尾-->
+    li[class$=java]{
+        font-size: 30px;
+    }
+    java+li{
+        color: beige;
+    }
+    
+    java ~ li{
+        color: #000;
+    }
+</style>
+<body>
+<ui>
+    <li class="c++" id="c++">c++</li>
+    <li class="java">java</li>
+    <li class="php">php</li>
+    <li class="web">web</li>
+</ui>
+<script>
+  window.onload=function () {
+      //选择器分类 标签选择器 id 选择器  类选择器 属性选择器
+     //类选择器前面必须加点.
+     var jj= document.querySelector(".c++");
+      //id选择器必须加#
+     var jj=document.querySelectorAll("#c++");
+     //获取所有
+    var j0=document.querySelectorAll("li")[0];
+
+  }
+</script>
+</body>
+</html>
